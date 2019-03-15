@@ -1,0 +1,29 @@
+import java.util.Arrays;
+
+import javax.swing.JOptionPane;
+
+public class main 
+{
+	public static void main(String[] args) 
+	{
+		int n, k, posicion = 0;   
+		n = Integer.parseInt(JOptionPane.showInputDialog(null, "Numero de elementos del arreglo:" ));
+		
+		int[] vector = new int[n];
+		for(int i=0; i<n; i++)
+		{
+			vector[i] = Integer.parseInt(JOptionPane.showInputDialog(null, "Elemento " + (i+1) + ":"));
+		}
+		
+		Arrays.sort(vector); /*Se ordena el vector con este metodo, ya que para que el metodo de Busqueda Binaria funcione...
+		                      el arreglo TIENE que estar ordenado*/
+		
+		k = Integer.parseInt(JOptionPane.showInputDialog(null, "Jugador A, eliga su numero:" ));
+		
+		busca busqueda = new busca(n, k, vector);
+		
+		busqueda.getElemento();  //PREGUNTAR PORQUE NO ME LLAMA AL METODO DE LA FUNCION
+
+	}
+
+}
