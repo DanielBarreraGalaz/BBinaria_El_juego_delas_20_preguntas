@@ -20,7 +20,7 @@ public class main
 		
 		k = Integer.parseInt(JOptionPane.showInputDialog(null, "Jugador A, eliga su numero:" ));
 		
-		busca busqueda = new busca(n, k, vector);
+		busca_binaria busqueda = new busca_binaria(n, k, vector);
 		
 		busqueda.getElemento();  //PREGUNTAR PORQUE NO ME LLAMA AL METODO DE LA FUNCION
 
